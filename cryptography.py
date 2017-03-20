@@ -20,8 +20,12 @@ if t is 'e':
         n=associations.find(c)
         numbers.append(n)
     k=input("key: ")
-    l=associations.find(k)
+    letters=[]
+    for c in k:
+        l=associations.find(c)
+        letters.append(l)
     print(numbers)
+    print(letters)
 elif t is 'd':
     m=input("message: ")
     n=associations.find(m)

@@ -13,13 +13,15 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 t=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-if t is e:
+if t is 'e':
+    m=input("message: ")
+    k=input("key: ")
+    associations.find(m)
+elif t is 'd':
     m=input("message: ")
     associations.find(m)
-elif t is d:
-    m=input("message: ")
-    associations.find(m)
-elif t is q:
+    k=input("key: ")
+elif t is 'q':
     print("Goodbye!")
 else:
     print("Did not understand command, try again.")

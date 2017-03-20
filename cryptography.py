@@ -15,12 +15,13 @@ t=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 if t is 'e':
     m=input("message: ")
-    numbers=list[]
+    numbers=[]
     for c in m:
         n=associations.find(c)
+        numbers.append(n)
     k=input("key: ")
     l=associations.find(k)
-    print(n)
+    print(numbers)
 elif t is 'd':
     m=input("message: ")
     n=associations.find(m)

@@ -20,6 +20,6 @@ elif t is d:
     m=input("message: ")
     associations.find(m)
 elif t is q:
-    
+    print("Goodbye!")
 else:
     print("Did not understand command, try again.")

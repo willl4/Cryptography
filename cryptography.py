@@ -15,12 +15,14 @@ t=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 if t is 'e':
     m=input("message: ")
-    k=input("key: ")
     associations.find(m)
+    k=input("key: ")
+    associations.find(k)
 elif t is 'd':
     m=input("message: ")
     associations.find(m)
     k=input("key: ")
+    associations.find(k)
 elif t is 'q':
     print("Goodbye!")
 else:

@@ -27,18 +27,11 @@ if t is 'e':
     s=len(letters)
     p=len(numbers)
     while s < p:
-        k=k*2
-        letters=[]
-        for c in k:
-            l=associations.find(c)
-            letters.append(l)
-        numbers=[]
-        for c in m:
-            n=associations.find(c)
-            numbers.append(n)
+        letters=letters*2
         s=len(letters)
-        p=len(numbers)
-        
+    print(letters)
+    q=
+    
 elif t is 'd':
     m=input("message: ")
     numbers=[]

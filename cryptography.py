@@ -24,8 +24,21 @@ if t is 'e':
     for c in k:
         l=associations.find(c)
         letters.append(l)
-    print(numbers)
-    print(letters)
+    s=len(letters)
+    p=len(numbers)
+    while s < p:
+        k=k*2
+        letters=[]
+        for c in k:
+        l=associations.find(c)
+        letters.append(l)
+        numbers=[]
+        for c in m:
+        n=associations.find(c)
+        numbers.append(n)
+        s=len(letters)
+        p=len(numbers)
+        
 elif t is 'd':
     m=input("message: ")
     numbers=[]
@@ -37,8 +50,6 @@ elif t is 'd':
     for c in k:
         l=associations.find(c)
         letters.append(l)
-    print(numbers)
-    print(letters)
 elif t is 'q':
     print("Goodbye!")
 else:

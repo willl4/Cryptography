@@ -30,12 +30,12 @@ if t is 'e':
         k=k*2
         letters=[]
         for c in k:
-        l=associations.find(c)
-        letters.append(l)
+            l=associations.find(c)
+            letters.append(l)
         numbers=[]
         for c in m:
-        n=associations.find(c)
-        numbers.append(n)
+            n=associations.find(c)
+            numbers.append(n)
         s=len(letters)
         p=len(numbers)
         

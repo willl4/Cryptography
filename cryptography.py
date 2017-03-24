@@ -48,6 +48,18 @@ elif t is 'd':
     for c in k:
         l=associations.find(c)
         letters.append(l)
+    s=len(letters)
+    p=len(numbers)
+    while s < p:
+        letters=letters*2
+        s=len(letters)
+    q=list(zip(numbers,letters))
+    result=[]
+    for a,b in q:
+        result.append(a-b)
+    result=[associations[x] for x in result]
+    print("".join(result))
+    
 elif t is 'q':
     print("Goodbye!")
 else:

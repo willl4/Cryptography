@@ -29,8 +29,13 @@ if t is 'e':
     while s < p:
         letters=letters*2
         s=len(letters)
-    print(letters)
-    q=
+    q=list(zip(numbers,letters))
+    result=[]
+    for a,b in q:
+        result.append(a+b)
+    result=[associations[x] for x in result]
+    print("".join(result))
+    
     
 elif t is 'd':
     m=input("message: ")

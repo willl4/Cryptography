@@ -12,7 +12,7 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 t=input("Enter e to encrypt, d to decrypt, or q to quit: ")
-
+o=0
 if t is 'e':
     m=input("message: ")
     numbers=[]
@@ -62,5 +62,6 @@ elif t is 'd':
     
 elif t is 'q':
     print("Goodbye!")
+    o=1
 else:
     print("Did not understand command, try again.")

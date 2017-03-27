@@ -16,7 +16,7 @@ o=0
 while o==0:
     t=input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if t is 'e':
-        m=input("message: ")
+        m=input("Message: ")
         numbers=[]
         for c in m:
             n=associations.find(c)
@@ -40,7 +40,7 @@ while o==0:
         
         
     elif t is 'd':
-        m=input("message: ")
+        m=input("Message: ")
         numbers=[]
         for c in m:
             n=associations.find(c)

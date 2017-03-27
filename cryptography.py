@@ -21,7 +21,7 @@ while o==0:
         for c in m:
             n=associations.find(c)
             numbers.append(n)
-        k=input("key: ")
+        k=input("Key: ")
         letters=[]
         for c in k:
             l=associations.find(c)
@@ -45,7 +45,7 @@ while o==0:
         for c in m:
             n=associations.find(c)
             numbers.append(n)
-        k=input("key: ")
+        k=input("Key: ")
         letters=[]
         for c in k:
             l=associations.find(c)
